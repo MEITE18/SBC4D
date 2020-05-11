@@ -1,0 +1,77 @@
+{"Name":"test_schema",
+"fields":[{
+"Name":"HDI rang",
+"type":"integer",
+"description":"rang de chaque pays selon l'indice de developpement humain"
+},
+{"Name":"HDI",
+"type":"string",
+"description":"Niveau IHD de chaque pays"
+},
+{"Name":"PAYS",
+"type":"string",
+"description":"pays"
+},
+{"Name":"1975 Total population(millions)",
+"type":"integer",
+"description":"population total de l'année 1975"
+},
+{"Name":"2005 Total population (millions)",
+"type":"integer",
+"description":"population total de l'année 2005"
+},
+{"Name":"2015 Total population (millions)",
+"type":"integer",
+"description":"population total de l'année 2015"
+},
+{"Name":"1975-2005Taux de croissance dEmographique annuel (%)",
+"type":"Number",
+"description":"l'évolution de la population entre 1975 et 2005"
+},
+{"Name":"2005-15b Taux de croissance dEmographique annuel(%)",
+"type":"Number",
+"description":"l'évolution de la population entre  2005 et 2015"
+},
+{"Name":"1975 Urban population(% of total)",
+"type":"integer",
+"description":"integer"
+},
+{"Name":"2005 Urban population(% of total)",
+"type":"integer"
+"description":"la population urbaine de 2005"
+},
+{"Name":"2015b Urban population(% of total)",
+"type":"integer",
+"description":"la population urbaine de 2015"
+},
+{"Name":"2005 Population de moins de 15 ans(% of total)",
+"type":"integer",
+"description":"la population total des moins de 15 ans de l'année 2005"
+},
+{"Name":"2015b Population de moins de 15 ans(% of total)",
+"type":"integer",
+"description":"la population total des moins de 15 ans de l'année 2015"
+},
+{"Name":"2005 Population âgee de 65 ans et plus (% of total)",
+"type":"integer",
+"description":"La population total âgee de 65ans et plus de l'année 2005"
+},
+{"Name":"2015b Population âgee de 65 ans et plus (% of total)",
+"type":"integer",
+"description":"La population total âgee de 65ans et plus de l'année 2015"
+},
+{"Name":"1970-75c Taux de fecondite total(naissances par femme)", 
+"type":"integer",
+"description":"taux de fécondité total de l'année 1970-75"
+},
+{"Name":"2000-05c Taux de fecondite total(naissances par femme)",
+"type":"integer",
+"description":"taux de fécondité total de l'année 2000-05"
+},
+],
+"missingValues":[""]
+}
+
+
+
+
