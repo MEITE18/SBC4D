@@ -86,7 +86,7 @@
 "description":"taux de fécondité total de l'année 2000-05"
 },
 ],
-"missingValues":[""]
+"missingValues":["NaN", ".."]
 }
 
 
