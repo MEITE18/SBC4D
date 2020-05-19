@@ -1,0 +1,94 @@
+{"Name":"test_schema",
+"fields":[{
+"Name":"HDI_rang",
+"title":"rang pays",
+"type":"integer",
+"description":"rang de chaque pays selon l'indice de developpement humain"
+},
+{"Name":"HDI",
+"title":"indice de developpement humain",
+"type":"string",
+"description":"Niveau IHD de chaque pays"
+},
+{"Name":"PAYS",
+"title":"pays",
+"type":"string",
+"description":"pays"
+},
+{"Name":"1975_Total_population_en_millions",
+"title":"1975 Total population(millions)",
+"type":"integer",
+"description":"population total de l'année 1975"
+},
+{"Name":"2005_Total_population_en_millions",
+"title":"2005 Total population (millions)",
+"type":"integer",
+"description":"population total de l'année 2005"
+},
+{"Name":"2015_Total_population_en_millions",
+"title":"2015 Total population (millions)",
+"type":"integer",
+"description":"population total de l'année 2015"
+},
+{"Name":"1975-2005_Taux_de_croissance_demographique_annuel_en_%",
+"title":"1975-2005Taux de croissance dEmographique annuel (%)",
+"type":"Number",
+"description":"l'évolution de la population entre 1975 et 2005"
+},
+{"Name":"2005-15_Taux_de_croissance_demographique_annuel_en_%",
+"title":"2005-15b Taux de croissance dEmographique annuel(%)",
+"type":"Number",
+"description":"l'évolution de la population entre  2005 et 2015"
+},
+{"Name":"1975_Urban_population_%_of_total",
+"title":"1975 Urban population(% of total),
+"type":"integer",
+"description":"integer"
+},
+{"Name":"2005_Urban_population_%_of_total",
+"title":"2005 Urban population(% of total)",
+"type":"integer"
+"description":"la population urbaine de 2005"
+},
+{"Name":"2015_Urban_population_%_of_total",
+"title":"2015b Urban population(% of total)",
+"type":"integer",
+"description":"la population urbaine de 2015"
+},
+{"Name":"2005_Population_de_moins_de_15_ans _%_of_total",
+"title":"2005 Population de moins de 15 ans(% of total)",
+"type":"integer",
+"description":"la population total des moins de 15 ans de l'année 2005"
+},
+{"Name":"2015_Population_de_moins_de_15_ans _%_of_total",
+"title":"2015b Population de moins de 15 ans(% of total)",
+"type":"integer",
+"description":"la population total des moins de 15 ans de l'année 2015"
+},
+{"Name":"2005_Population_  gee_de_65_ans_et_plus_%_of_tota",
+"title":"2005 Population âgee de 65 ans et plus (% of total)",
+"type":"integer",
+"description":"La population total âgee de 65ans et plus de l'année 2005"
+},
+{"Name":"2015_Population_agee_de_65_ans_et_plus_%_of_total",
+"title":"2015b Population âgee de 65 ans et plus (% of total)",
+"type":"integer",
+"description":"La population total âgee de 65ans et plus de l'année 2015"
+},
+{"Name":"1970-75_Taux_de_fecondite_total_naissances_par_femme",
+"title":"1970-75c Taux de fecondite total(naissances par femme)", 
+"type":"integer",
+"description":"taux de fécondité total de l'année 1970-75"
+},
+{"Name":"2000-05_Taux_de_fecondite_total_naissances_par_femme",
+"title":"2000-05c Taux de fecondite total(naissances par femme)",
+"type":"integer",
+"description":"taux de fécondité total de l'année 2000-05"
+},
+],
+"missingValues":["NaN", ".."]
+}
+
+
+
+
