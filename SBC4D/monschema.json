@@ -1,5 +1,5 @@
 {
-    "created": "2020-05-19",
+    "created": "2020-05-22",
     "description": "situation Country",
     "fields": [
         {
@@ -24,18 +24,6 @@
             "type": "string"
         },
         {
-            "description": "Reference to data source.",
-            "name": "reference",
-            "title": "Reference",
-            "type": "string"
-        },
-        {
-            "description": "Year of release.",
-            "name": "year",
-            "title": "Year",
-            "type": "year"
-        },
-        {
             "constraints": {
                 "required": true
             },
@@ -47,5 +35,5 @@
     ],
     "name": "human-development",
     "title": "UN Human Development Report",
-    "updated": "2020-05-19"
+    "updated": "2020-05-22"
 }

@@ -1,13 +1,7 @@
 {
-    "created": "2020-05-19",
+    "created": "2020-05-22",
     "description": "situation Country",
     "fields": [
-        {
-            "description": "Year of release.",
-            "name": "year",
-            "title": "Year",
-            "type": "year"
-        },
         {
             "constraints": {
                 "required": true
@@ -69,26 +63,6 @@
                 }
             ],
             "title": "Indicator Name",
-            "type": "string"
-        },
-        {
-            "description": "Reference to data source.",
-            "name": "reference",
-            "structure": [
-                {
-                    "description": "Rename an existing field to conform to a schema name. Only valid where a single field is provided.",
-                    "name": "RENAME",
-                    "structure": [
-                        "field"
-                    ],
-                    "type": "action"
-                },
-                {
-                    "name": "Reference",
-                    "type": "number"
-                }
-            ],
-            "title": "Reference",
             "type": "string"
         },
         {
@@ -401,12 +375,12 @@
                     "2": NaN
                 }
             },
-            "file": "819bf1af-3200-4bd4-80ab-b03ed618bafc.xlsx",
-            "id": "819bf1af-3200-4bd4-80ab-b03ed618bafc",
+            "file": "51911de2-46b0-4e3b-92ee-fe770f80a81a.xlsx",
+            "id": "51911de2-46b0-4e3b-92ee-fe770f80a81a",
             "morph": [
                 {
                     "description": "Remove all blank columns and rows from a DataFrame.",
-                    "id": "5f8b6593-c8d4-468f-8d47-7ff8097e783d",
+                    "id": "79564c38-e31d-4988-aeb8-7797f99de6c1",
                     "name": "DEBLANK",
                     "structure": [],
                     "title": "De-blank",
@@ -414,7 +388,7 @@
                 },
                 {
                     "description": "Remove all duplicated rows from a DataFrame.",
-                    "id": "f59b08b5-fe3e-4739-a0b7-9cd40b6901f9",
+                    "id": "af9079a9-770d-4c7c-84d2-91f2261afcf6",
                     "name": "DEDUPE",
                     "structure": [],
                     "title": "Deduplicate",
@@ -422,7 +396,7 @@
                 },
                 {
                     "description": "Rebase the header row at an indexed row and drop rows above that point.",
-                    "id": "393411d6-7a4e-4083-8a09-7ae1072cb52f",
+                    "id": "83d70b57-1061-4db9-8102-f2696ca2f685",
                     "name": "REBASE",
                     "parameters": {
                         "rows": [
@@ -437,7 +411,7 @@
                 },
                 {
                     "description": "Delete rows provided in a list. They don't have to be contiguous.",
-                    "id": "749888f8-d161-49db-ad5f-54ae7f0fabbe",
+                    "id": "49fb6f62-e67a-4d0a-a3d8-7f1402885ea9",
                     "name": "DELETE",
                     "parameters": {
                         "rows": [
@@ -495,22 +469,22 @@
                 },
                 {
                     "description": "Rename header columns listed in a dict.",
-                    "id": "3fe759aa-4106-4e44-a3a5-5f2913023344",
+                    "id": "1c81d613-d042-4d47-af82-aa5b05f97806",
                     "name": "RENAME",
                     "parameters": {
                         "column_names": [
                             "HDI rank",
                             "Country",
                             "Total population (millions) 1975",
-                            "Reference 1",
+                            "a",
                             "Total population (millions)2005",
-                            "Reference 2",
+                            "b",
                             "Total population (millions)2015b",
-                            "Reference 3",
+                            "c",
                             "Annual population growth rate  (%) 1975-2005",
-                            "Reference 4",
+                            "d",
                             "Annual population growth rate  (%) 2005-15b",
-                            "Reference 5",
+                            "e",
                             "Urban populationa (% of total) 1975",
                             "Urban populationa (% of total) 2005",
                             "Urban populationa (% of total) 2015b",
@@ -530,7 +504,7 @@
                 },
                 {
                     "description": "Convert row-level categories into column categorisations.",
-                    "id": "7ddf888f-940a-490a-a3d9-b7e210e82b6d",
+                    "id": "65b83d84-99b9-4da4-8202-e9e74ac8ae48",
                     "name": "CATEGORISE",
                     "parameters": {
                         "column_names": [
@@ -551,7 +525,7 @@
                 },
                 {
                     "description": "Transform a DataFrame from wide to long format.",
-                    "id": "5e0ebd57-966a-49b3-b354-487961ef3f49",
+                    "id": "0ff51a76-b8ef-4ce5-862b-ccc669dd4b58",
                     "name": "MELT",
                     "parameters": {
                         "column_names": [
@@ -560,13 +534,13 @@
                         ],
                         "columns": [
                             [
-                                "Reference 2",
-                                "Reference 4",
-                                "Reference 5",
-                                "Reference 1",
-                                "Country",
-                                "Reference 3",
-                                "HDI category"
+                                "b",
+                                "a",
+                                "c",
+                                "e",
+                                "d",
+                                "HDI category",
+                                "Country"
                             ],
                             [
                                 "HDI rank",
@@ -595,57 +569,21 @@
                     "type": "morph"
                 },
                 {
-                    "description": "Transform a DataFrame from wide to long format.",
-                    "id": "841714d0-647a-475a-9800-448f806c7e07",
-                    "name": "MELT",
-                    "parameters": {
-                        "column_names": [
-                            "Reference Name",
-                            "Reference"
-                        ],
-                        "columns": [
-                            [
-                                "Country",
-                                "Indicator Name",
-                                "Indicator Value",
-                                "HDI category"
-                            ],
-                            [
-                                "Reference 1",
-                                "Reference 2",
-                                "Reference 3",
-                                "Reference 4",
-                                "Reference 5"
-                            ]
-                        ]
-                    },
-                    "structure": [
-                        "columns",
-                        "column_names"
-                    ],
-                    "title": "Melt",
-                    "type": "morph"
-                },
-                {
                     "description": "Remove all blank columns and rows from a DataFrame.",
-                    "id": "8dfae427-3419-445f-a3a0-fb85ec7dd152",
+                    "id": "f1cc3471-4721-43cf-b1b8-0b7b91ed322e",
                     "name": "DEBLANK",
                     "structure": [],
                     "title": "De-blank",
                     "type": "morph"
                 }
             ],
-            "original": "ALI_HDR 2007-2008 Table_5.xlsx"
+            "original": "HDR 2007-2008 Table_5.xlsx"
         }
     ],
     "name": "human-development",
     "output_data": {
-        "checksum": "70261c6068ebe3c0d60a408214eb93e92dd0f353695e39fb0c3bfa1130d60539e6e8d524628875a6104a03cc1023e34600d27968e8309b5c682ab39f27856e8e",
+        "checksum": "db6b69e08f7ea1360b71c6a1c8a8a2d8df105b090c3f807ba69b0a7859e6b5c38f192e81f3ff100988385f4f450469780b3a487d55a10e05d8ce4b7deea44342",
         "columns": [
-            {
-                "name": "year",
-                "type": "number"
-            },
             {
                 "name": "country_name",
                 "type": "string"
@@ -657,10 +595,6 @@
             {
                 "name": "indicator_name",
                 "type": "string"
-            },
-            {
-                "name": "reference",
-                "type": "number"
             },
             {
                 "name": "values",
@@ -683,32 +617,46 @@
                 "1": "HDI rank",
                 "2": "HDI rank"
             },
-            "reference": {
-                "0": NaN,
-                "1": NaN,
-                "2": NaN
-            },
             "values": {
                 "0": 1,
                 "1": 2,
                 "2": 3
-            },
-            "year": {
-                "0": NaN,
-                "1": NaN,
-                "2": NaN
             }
         },
-        "file": "output_9f4aea13-cbe2-40f2-b941-b31e7aa00b5c.csv",
-        "id": "output_9f4aea13-cbe2-40f2-b941-b31e7aa00b5c"
+        "file": "output_d8d82c8b-a6a6-4f64-ba22-6393795edd4e.csv",
+        "id": "output_d8d82c8b-a6a6-4f64-ba22-6393795edd4e"
     },
-    "process_date": "2020-05-19",
+    "process_date": "2020-05-22",
     "status": "PROCESS_COMPLETE",
     "title": "UN Human Development Report",
-    "updated": "2020-05-19",
+    "updated": "2020-05-22",
     "working_data": {
-        "checksum": "b0342acc3b480ebd1c1c60c8dbe7b0189463b4d9d13367ea54646b643761d7c64f11826a963f1347c1ea929028e00a69af862dcdf36e1f5f4c1ac0d28aa2dd5e",
+        "checksum": "d9d5c40c91e25cf158e70177092ca069eb3cc5b467a6c1b4197d8091823f0cb26425c0a256d55e4291df020d920a696592f34f2fd6d0b6ba0bd651761015d854",
         "columns": [
+            {
+                "name": "b",
+                "type": "number"
+            },
+            {
+                "name": "a",
+                "type": "number"
+            },
+            {
+                "name": "c",
+                "type": "number"
+            },
+            {
+                "name": "e",
+                "type": "number"
+            },
+            {
+                "name": "d",
+                "type": "number"
+            },
+            {
+                "name": "HDI category",
+                "type": "string"
+            },
             {
                 "name": "Country",
                 "type": "string"
@@ -719,18 +667,6 @@
             },
             {
                 "name": "Indicator Value",
-                "type": "number"
-            },
-            {
-                "name": "HDI category",
-                "type": "string"
-            },
-            {
-                "name": "Reference Name",
-                "type": "string"
-            },
-            {
-                "name": "Reference",
                 "type": "number"
             }
         ],
@@ -755,18 +691,33 @@
                 "1": 2,
                 "2": 3
             },
-            "Reference": {
+            "a": {
                 "0": NaN,
                 "1": NaN,
                 "2": NaN
             },
-            "Reference Name": {
-                "0": "Reference 1",
-                "1": "Reference 1",
-                "2": "Reference 1"
+            "b": {
+                "0": NaN,
+                "1": NaN,
+                "2": NaN
+            },
+            "c": {
+                "0": NaN,
+                "1": NaN,
+                "2": NaN
+            },
+            "d": {
+                "0": NaN,
+                "1": NaN,
+                "2": NaN
+            },
+            "e": {
+                "0": NaN,
+                "1": NaN,
+                "2": NaN
             }
         },
-        "file": "working_9a368bdc-55c6-4ce4-82d8-5827a8d21b22.xlsx",
-        "id": "working_9a368bdc-55c6-4ce4-82d8-5827a8d21b22"
+        "file": "working_9ce767e6-efd6-4dec-b283-c90d39bdae26.xlsx",
+        "id": "working_9ce767e6-efd6-4dec-b283-c90d39bdae26"
     }
 }
